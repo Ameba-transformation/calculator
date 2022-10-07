@@ -5,7 +5,7 @@ public class Calculator{
         int num1, num2, result=0;
         char operator;
 
-        System.out.print("enter expression(1 + 2) : ");
+        System.out.print("enter expression(hello 1 + 2) : ");
         try (Scanner scanner = new Scanner(System.in)) {
             num1 = scanner.nextInt();
             operator = scanner.next().toCharArray()[0];
