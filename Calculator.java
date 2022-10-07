@@ -28,7 +28,7 @@ public class Calculator{
     }
 
     private static int sub(int a, int b) {
-        return 0;
+        return a-b;
     }
 
     private static int div(int a, int b) {
