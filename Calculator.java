@@ -2,28 +2,28 @@ import java.util.Scanner;
 
 public class Calculator{
     public static void main(String[] args) {
-        int a, b, c=0;
+        int num1, num2, result=0;
         char operator;
 
         System.out.print("enter expression : ");
         try (Scanner scanner = new Scanner(System.in)) {
-            a = scanner.nextInt();
+            num1 = scanner.nextInt();
             operator = scanner.next().toCharArray()[0];
-            b = scanner.nextInt();
+            num2 = scanner.nextInt();
         }
 
         switch(operator){
-            case '+':c = add(a,b);
+            case '+':result = add(num1,num2);
                 break;
-            case '-':c = sub(a,b);
+            case '-':result = sub(num1,num2);
             break;
-            case '/':c = div(a,b);
+            case '/':result = div(num1,num2);
             break;
-            case '*':c = mul(a,b);
+            case '*':result = mul(num1,num2);
             break;
         }
 
-        System.out.println(c);
+        System.out.println(result);
 
     }
 
