@@ -5,12 +5,12 @@ public class Calculator{
         int a, b, c=0;
         char operator;
 
-        System.out.println("enter expression");
-        Scanner scanner = new Scanner(System.in);
-
-        a = scanner.nextInt();
-        operator = scanner.next().toCharArray()[0];
-        b = scanner.nextInt();
+        System.out.print("enter expression : ");
+        try (Scanner scanner = new Scanner(System.in)) {
+            a = scanner.nextInt();
+            operator = scanner.next().toCharArray()[0];
+            b = scanner.nextInt();
+        }
 
         switch(operator){
             case '+':c = add(a,b);
