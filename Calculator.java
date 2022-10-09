@@ -5,7 +5,9 @@ public class Calculator{
         int num1, num2, result=0;
         char operator;
 
-        System.out.print("enter expression : ");
+        System.out.print("enter expression(hello 1 + 2) : ");
+        //나는 충돌을 사랑하는 얼티메이트 디럭스 리뉴얼 하이퍼 범퍼카mk2 오메가!!!
+        System.out.print("enter expression(1 + 2) : ");
         try (Scanner scanner = new Scanner(System.in)) {
             num1 = scanner.nextInt();
             operator = scanner.next().toCharArray()[0];
@@ -28,7 +30,7 @@ public class Calculator{
     }
 
     private static int sub(int a, int b) {
-        return a-b;
+        return 0;
     }
 
     private static int div(int a, int b) {
@@ -40,6 +42,6 @@ public class Calculator{
     }
 
     private static int add(int a, int b) {
-        return 0;
+        return a + b;
     }
 }
