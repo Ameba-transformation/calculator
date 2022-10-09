@@ -32,7 +32,7 @@ public class Calculator{
     }
 
     private static int div(int a, int b) {
-        return 0;
+        return a / b;
     }
 
     private static int mul(int num1, int num2) {
@@ -40,6 +40,6 @@ public class Calculator{
     }
 
     private static int add(int a, int b) {
-        return 0;
+        return a + b;
     }
 }
